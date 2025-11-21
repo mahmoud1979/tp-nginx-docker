@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Nginx – Dockerfile vs Docker Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef1f5;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .card {
+            background: white;
+            width: 70%;
+            margin: auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        p { font-size: 18px; line-height: 1.5; }
+        .highlight {
+            background: #dff0d8;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Bienvenue, je suis Nginx 👋</h1>
+        <p>
+            Je suis un serveur web utilisé ici pour vous aider à comprendre la différence entre un
+            <strong>Dockerfile</strong> et une <strong>Docker image</strong>.
+        </p>
+
+        <div class="highlight">
+            <p>
+                ➤ <strong>Dockerfile</strong> : un fichier texte contenant les instructions nécessaires  
+                pour construire une image (par exemple installer Nginx, copier des fichiers…).  
+                C’est la *recette*.
+            </p>
+
+            <p>
+                ➤ <strong>Docker image</strong> : le résultat final obtenu après exécution du Dockerfile.  
+                C’est une *image prête à tourner*, qui sera utilisée pour créer des conteneurs.
+            </p>
+        </div>
+
+        <p>
+            Dans cet exemple, vous voyez cette page parce que le Dockerfile a été utilisé  
+            pour construire une image qui contient Nginx et ce fichier HTML.
+        </p>
+    </div>
+</body>
+</html>
